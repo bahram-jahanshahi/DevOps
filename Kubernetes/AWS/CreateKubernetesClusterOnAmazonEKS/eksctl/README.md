@@ -22,6 +22,16 @@ eksctl version
 ```
 
 ## Create Amazon EKS Cluster
+
+#### run by config YAML file
+```console
+eksctl create cluster -f cluster.yaml
+```
+#### run directly
 ```console
 eksctl create cluster --name test-cluster --version 1.17 --region eu-north-1 --nodegroup-name linux-nodes --node-type t2.micro --nodes 2 
+```
+#### To delete this cluster, run:
+```console
+eksctl delete cluster -f cluster.yaml
 ```
