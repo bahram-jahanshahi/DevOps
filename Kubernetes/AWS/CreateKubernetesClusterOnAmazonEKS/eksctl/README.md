@@ -27,7 +27,7 @@ eksctl version
 ```console
 eksctl create cluster -f cluster.yaml
 ```
-#### run directly
+#### or run in console
 ```console
 eksctl create cluster --name test-cluster --version 1.17 --region eu-north-1 --nodegroup-name linux-nodes --node-type t2.micro --nodes 2 
 ```
